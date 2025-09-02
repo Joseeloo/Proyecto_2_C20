@@ -6,7 +6,7 @@ Este repositorio contiene dos versiones del mismo proyecto, desarrolladas con di
 - [Programación Orientada a Objetos (POO)](#programación-orientada-a-objetos-poo)
 - [Programación Funcional (PF)](#programación-funcional-pf)
 
-## Introducción general
+# Introducción general
 Bienvenido al segundo proyecto del bootcamp, donde pondrás en práctica conceptos fundamentales de programación en JavaScript, estructuras de datos, control de flujo y herramientas colaborativas como Git y GitHub.
 El objetivo principal es desarrollar un programa interactivo que permita a los usuarios crear encuestas, votar y visualizar resultados en tiempo real, todo desde la consola del navegador, enlazado a un archivo HTML. Esta solución se construirá aplicando dos enfoques complementarios: Programación Orientada a Objetos (POO) y Programación Funcional (PF).
 - A lo largo del desarrollo, fortalecerás habilidades clave como:
@@ -21,7 +21,7 @@ Este repositorio documenta todo el proceso técnico, desde la estructura del có
 
 ---
 
-## Programación Orientada a Objetos (POO)
+# Programación Orientada a Objetos (POO)
 ## Objetivo
 Construir un programa en JavaScript utilizando el paradigma de Programación Orientada a Objetos (POO) que permita a los usuarios crear encuestas, votar y visualizar los resultados en tiempo real. El sistema debe aplicar conceptos fundamentales de programación, estructuras de datos y control de flujo.
 
@@ -103,9 +103,9 @@ Proyecto subido a GitHub en un repositorio individual.
 
 ---
 
-## 🔁 Programación Funcional (PF)
+# Programación Funcional (PF)
 
 ---
 
 **Autor:** José Esteban  
-**Fecha de entrega:** 28-07-2025
+**Fecha de entrega:** 08-09-2025
