@@ -1,5 +1,23 @@
 # Proyecto: Sistema de Encuestas
-Este repositorio contiene dos versiones del mismo proyecto, desarrolladas con distintos paradigmas de programación en JavaScript.
+> ⚠️ **IMPORTANTE: Comportamiento especial en la consola del navegador**
+Este proyecto utiliza `prompt()` para interactuar con el usuario. Debido a cómo los navegadores manejan los cuadros de diálogo, los mensajes de `console.log()` pueden **no aparecer inmediatamente**. En su lugar, se muestran todos juntos al final del flujo (por ejemplo, al seleccionar "Salir").
+### ¿Qué hacer?
+- Abre la consola antes de comenzar.
+- Interactúa normalmente con los cuadros de diálogo.
+- Si los mensajes no aparecen en tiempo real, selecciona "Salir" para verlos todos.
+- Recarga la página si querés una ejecución más fluida.
+> ⚠️ **IMPORTANTE: Recomendación para evitar bloqueo de consola**
+
+Antes de comenzar, se recomienda seguir estos pasos para asegurar que los mensajes en consola se muestren correctamente mientras se ejecuta:
+### Pasos sugeridos
+1. **Abrir la consola del navegador** (`Ctrl + Shift + J` o `F12`).
+2. **Elegir la opción "4. Salir" al inicio**, luego **recargar la página**.
+3. Comenzar a interactuar con el menú desde cero.
+
+Esto permite que la consola se desbloquee y los mensajes de `console.log()` se muestren **al instante**, evitando que se acumulen hasta el final.
+> Este comportamiento es propio del uso de `prompt()` en navegadores y **no afecta la lógica del programa**.
+
+---
 
 ## Índice
 - [Introducción general](#introducción-general)
@@ -84,7 +102,56 @@ Construir un programa en JavaScript utilizando el paradigma de Programación Ori
 - Función flecha para contar votos totales
 - Uso de prompt() para interacción directa con el usuario
 
-## Ejemplo de uso
+## Ejemplo de uso 
+Para el ejemplo de uso se limito el numero de preguntas a 2 pero en el codigo del proyecto son minimo 8 preguntas, las opcines utilizadas fueron 3 y se respondio 3 veces probando todas las opciones generadas.
+
+### Menu principal:
+<img width="531" height="346" alt="image" src="https://github.com/user-attachments/assets/48d80380-6362-428a-a444-7d768cf6a340" />
+
+Entrada del usuario: Opcion 1: Crear encuestas
+```
+- Ingresa el título de la encuesta: “Preferencias de viaje”
+- ¿Cuántas preguntas tendrá la encuesta?: 2
+- Escribe la pregunta 1: “¿Destino favorito?”
+- ¿Cuántas opciones tendrá la pregunta 1? (Entre 2 y 4): 3
+- Escribe la opción 1: “Playa”
+- Escribe la opción 2: “Montaña”
+- Escribe la opción 3: “Ciudad”
+- Escribe la pregunta 2: “¿Medio de transporte?”
+- ¿Cuántas opciones tendrá la pregunta 1? (Entre 2 y 4): 3
+- Escribe la opción 1: “Avión”
+- Escribe la opción 2: “Bus”
+- Escribe la opción 3: “Auto”
+```
+<img width="625" height="49" alt="image" src="https://github.com/user-attachments/assets/ed0f71ed-8470-4357-8c71-5451934fb324" />
+
+Entrada del usuario: Opcion 2: Responder encuestas (x3)
+
+<img width="578" height="47" alt="image" src="https://github.com/user-attachments/assets/da2590db-edf6-48d7-97f1-6c311bf7d762" />
+```
+- Pregunta 1: ¿Destino favorito?
+  - 0: Playa
+  - 1: Montaña
+  - 2: Ciudad
+Respuesta: 0
+```
+<img width="582" height="243" alt="image" src="https://github.com/user-attachments/assets/8170325c-3581-4607-860b-047752c31d96" />
+
+```
+- Pregunta 2: ¿Medio de transporte?
+  - 0: Avión
+  - 1: Bus
+  - 2: Auto
+```
+<img width="581" height="251" alt="image" src="https://github.com/user-attachments/assets/305c0a30-a26b-4c66-9d13-791715f031a9" />
+
+Entrada del usuario: Opcion 3: Ver Resultados
+
+<img width="595" height="374" alt="image" src="https://github.com/user-attachments/assets/c6741b49-b8ff-4564-89c0-f54de8d77166" />
+
+Entrada del usuario: Opcion 4: Salir
+
+<img width="578" height="33" alt="image" src="https://github.com/user-attachments/assets/0d9d5aa0-7e22-431e-82a9-3828c7c50ecc" />
 
 
 ## Control de versiones
@@ -92,6 +159,7 @@ Proyecto subido a GitHub en un repositorio individual.
 
 ## Tecnología usada
 - JavaScript (POO)
+- HTML
 - Git & GitHub para control de versiones
 
 ## Estado del proyecto
