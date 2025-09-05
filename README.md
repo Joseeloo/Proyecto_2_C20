@@ -202,7 +202,7 @@ Construir un programa en JavaScript utilizando el paradigma de Programación Fun
 ## Estructura del programa (PF)
 En lugar de clases, se usan funciones y objetos literales:
 
-Funciones principales
+## Funciones principales
 - crearPregunta(texto, opciones) → devuelve un objeto {texto, opciones, votos}.
 - crearEncuesta(titulo) → devuelve un objeto {titulo, preguntas, respondida}.
 - agregarPregunta(encuesta, pregunta) → añade preguntas a la encuesta.
@@ -225,6 +225,25 @@ Menú principal: implementado con while + switch.
 - Objetos literales para representar preguntas y encuestas.
 - Funciones puras y flecha (=>).
 - prompt() para interacción directa con el usuario.
+
+## Funcionamiento
+El funcionamiento es equivalente al de la versión POO:
+
+1. Al ejecutar el programa en el navegador, se abre un menú principal con cuatro opciones:  
+   - Crear encuesta  
+   - Responder encuesta  
+   - Ver resultados  
+   - Salir  
+2. Al crear una encuesta, se solicita:  
+   - El título de la encuesta.  
+   - El número de preguntas (mínimo 8).  
+   - El texto de cada pregunta y sus opciones de respuesta (entre 2 y 4).  
+3. Al responder, se muestran las preguntas con sus opciones numeradas.  
+   El usuario elige un número y el sistema registra el voto, mostrando los resultados parciales en tiempo real.  
+4. Al ver resultados, se imprime en la consola el resumen de votos por pregunta y el total de votos.  
+
+> ⚠️ Al igual que en la versión POO, debido al uso de `prompt()`, los mensajes en la consola pueden acumularse y mostrarse todos al seleccionar "Salir". Esto no afecta la lógica del programa.
+
 
 ## Control de versiones
 Proyecto subido a GitHub en un repositorio individual.
