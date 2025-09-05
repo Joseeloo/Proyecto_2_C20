@@ -172,6 +172,74 @@ Proyecto subido a GitHub en un repositorio individual.
 ---
 
 # Programación Funcional (PF)
+## Objetivo
+Construir un programa en JavaScript utilizando el paradigma de Programación Funcional (PF) que permita a los usuarios crear encuestas, votar y visualizar los resultados en tiempo real. La idea es mostrar cómo, sin necesidad de clases, se pueden lograr las mismas funcionalidades usando funciones puras, arrays y objetos literales.
+
+## Funcionalidades del sistema
+(Se repiten las mismas que en POO, pero aclarando que ahora se resuelven con funciones en vez de métodos de clases)
+- Interacción con el usuario
+  - Menú principal con opciones:
+    1.  Crear encuesta
+    2.  Responder encuesta
+    3.  Ver resultados
+    4.  Salir del programa
+- Creación de encuesta
+  - Ingreso del título de la encuesta
+  - Definición del número de preguntas (mínimo 8)
+  - Para cada pregunta:
+    - Texto de la pregunta
+    - Número de opciones (entre 2 y 4)
+    - Ingreso de cada opción
+- Votación
+  - Muestra cada pregunta con sus opciones numeradas
+  - El usuario selecciona una opción por número
+  - Se registra el voto y se muestra el resultado parcial inmediatamente
+- Visualización de resultados
+  - Muestra el título de la encuesta
+  - Lista cada pregunta con su número, texto y votos por opción
+  - Calcula y muestra el total de votos registrados
+
+## Estructura del programa (PF)
+En lugar de clases, se usan funciones y objetos literales:
+
+Funciones principales
+- crearPregunta(texto, opciones) → devuelve un objeto {texto, opciones, votos}.
+- crearEncuesta(titulo) → devuelve un objeto {titulo, preguntas, respondida}.
+- agregarPregunta(encuesta, pregunta) → añade preguntas a la encuesta.
+- votar(pregunta, indiceOpcion) → registra un voto en la opción indicada.
+- mostrarResultadosPregunta(pregunta) → imprime los resultados de una sola pregunta.
+- contarVotosTotales(encuesta) → calcula la suma de todos los votos usando reduce.
+- responderEncuesta(encuesta) → permite al usuario votar cada pregunta.
+- mostrarResultados(encuesta) → imprime los resultados completos.
+
+## Control de flujo
+Menú principal: implementado con while + switch.
+- Validaciones: con if y isNaN.
+- Bucles y funciones de orden superior:
+  - for para recorrer preguntas.
+  - forEach para opciones y votos.
+  - reduce para contar votos.
+
+## Operaciones y estructuras
+- Arrays para almacenar opciones y votos.
+- Objetos literales para representar preguntas y encuestas.
+- Funciones puras y flecha (=>).
+- prompt() para interacción directa con el usuario.
+
+## Control de versiones
+Proyecto subido a GitHub en un repositorio individual.
+
+## Tecnología usada
+- JavaScript (PF)
+- HTML
+- Git & GitHub para control de versiones
+
+## Estado del proyecto
+Cumple con todos los requisitos solicitados:
+- Creación dinámica de encuestas por parte del usuario
+- Registro de votos y visualización en tiempo real
+- Uso de funciones, arrays y objetos literales
+- Validaciones y control de flujo correctamente implementados
 
 ---
 
